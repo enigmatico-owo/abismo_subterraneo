@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: red;
+    margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+body {
+    background-color: black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+body,
+main {
+    margin-top: 0px;
+}
+
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: darkred;
+}
+
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+
+p {
+    font-size: 1.50rem;
+    color: darkred;
+}
+
+
+span {
+    font-size: 1.25rem;
+    color: red;
+    margin-left: 5px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.50rem;
+    font-style: italic;
+    font-weight: normal;
+}
+
+a:hover {
+    font-weight: bolder;
+}
+
+.cabecalho {
+    border-bottom: red 2px solid;
+    width: 100vw;
+    background-color: darkred;
+    margin-top: 0px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+
+}
+
+.cabecalho a {
+    color: white;
+}
+
+.titulo {
+    color: white;
+    margin-top: 0;
+}
+
+.sub-titulo {
+    color: white;
+    font-style: italic;
+}
+
+.cabecalho h2 {
+    color: white;
+}
+
+
+
+.div-cadastro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.div-separadora-postagem {
+    border: darkred 1px solid;
+}
+
+
+.conteudo {
+    width: 90vw;
+}
+
+.div-comentarios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding-left: 5%;
+    padding-right: 5%;
+    
+}
+
+textarea {
+    background-color: black;
+    border: 1px red solid;
+    box-sizing: border-box;
+    width: 100%;
+    resize: vertical;
+    font-size: 1.25rem;
+}
+
+
+input, button {
+    background-color: black;
+    color: red;
+    border: 1px red solid;
+    box-sizing: border-box;
+    font-size: 1.25rem;
+    width: 100%;
+
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: darkred;
+    font-style: italic;
+}
+
+button:hover {
+    background-color: red;
+    color: white;
+}
+
+.rodape {
+    background-image: url("../imagens/rodape.png");
+    color:transparent;
+    background-repeat: repeat-x; /* Repete apenas horizontalmente */
+    background-position: bottom left; /* Alinha a imagem na base do rodapé */
+    min-height: 100px; /* Garante altura mínima para a imagem aparecer */
+    width: 100%;
+    background-size: 10vw;
+}
+
+
