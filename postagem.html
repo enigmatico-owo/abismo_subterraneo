@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postagem</title>
+
+     <link rel="stylesheet" href="css/pagina-inicial.css">
+    <script src="javascript.js"></script>
+    
+
+</head>
+<body>
+
+    <header class="cabecalho">
+        <h1 class="titulo">ABISMO SUBTERRÂNEO</h1>
+        <p class="sub-titulo">Um blog para a cena undergroud! </p>
+        <a href="index.html">Voltar para a página inicial</a>
+    </header>
+
+    <main class="conteudo">
+
+        <div id="div-postagens"></div>
+    </main>
+
+    <footer class="rodape"></footer>
+
+    <script>
+        const parametrosURL = new URLSearchParams(window.location.search);
+        const id_postagem = parametrosURL.get("postagem");
+        ler_e_carregar_postagem_por_id(id_postagem);
+    </script>
+
+
+    <footer class="rodape"></footer>
+</body>
+</html>

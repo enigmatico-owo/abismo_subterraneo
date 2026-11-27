@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABISMO SUBTERRÂNEO</title>
+
+    <link rel="stylesheet" href="css/pagina-inicial.css">
+
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <h1 class="titulo">ABISMO SUBTERRÂNEO</h1>
+        <p class="sub-titulo">Um blog para a cena undergroud! </p>
+        <a href="cadastro.html" id='link-criar-conta'>Criar uma conta! </a>
+
+        <a href="criar-postagem.html">Criar uma postagem! </a>
+
+        <button onclick="fazer_login()" id="botao-fazer-login">Fazer login! </button>
+        <button onclick="fazer_logout()" id="botao-fazer-logout">Fazer logout! </button>
+
+        <a id="logado-como">Você não está logado</a>
+
+    </header>
+
+    <main class="conteudo">
+
+        <h1 id="confira_as_postagens">Confira as postagens! </h1>
+
+        <div id="div-postagens"></div></div>
+
+    </main>
+
+    <footer class="rodape"></footer>
+
+    <script src="javascript.js"></script>
+    <script>
+        ler_e_carregar_postagens_resumidas(-1);
+       
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USUARIO</title>
+
+    <link rel="stylesheet" href="css/pagina-inicial.css">
+    <script src="javascript.js"></script>
+
+</head>
+<body>
+    
+    <header class="cabecalho">
+        <h1 class="titulo">ABISMO SUBTERRÂNEO</h1>
+        <p class="sub-titulo">Um blog para a cena undergroud! </p>
+        <h2 id="pagina-do-usuario">Página do Usuário ...? </h2>
+        <a href="index.html">Voltar para a página inicial</a>
+    </header>
+
+    <main class="conteudo">
+
+        <h1>Descrição do Usuário </h1>
+        <p id="descricao-do-usuario">Descricao do usuario... </p>
+
+
+        <h1>Postagens do Usuário... </h1>
+        <div id="div-postagens"></div>
+    </main>
+
+    <script>
+        const parametrosURL = new URLSearchParams(window.location.search);
+
+        const usuario = parametrosURL.get("usuario");
+        
+        if (usuario == JSON.parse(localStorage.getItem("login")).usuario) {
+            document.getElementById("pagina-do-usuario").innerText = "Bem-vindo ao seu perfil! ";
+        } else {
+            document.getElementById("pagina-do-usuario").innerText = "Página do usuário " + usuario;
+        }
+        
+        ler_e_carregar_postagens(usuario);
+        carregar_descricao(usuario);
+
+    </script>
+
+    <footer class="rodape"></footer>
+
+</body>
+</html>

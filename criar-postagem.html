@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABISMO SUBTERRÂNEO</title>
+
+    <link rel="stylesheet" href="css/pagina-inicial.css">
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <h1 class="titulo">ABISMO SUBTERRÂNEO</h1>
+        <p class="sub-titulo">Um blog para a cena undergroud! </p>
+        <a href="index.html">Voltar para a página inicial</a>
+
+        <button onclick="fazer_login()" id="botao-fazer-login">Fazer login! </button>
+
+        <h2 id="logado-como">Você não está logado</h2>
+    </header>
+
+    <div class="div-postagem">
+
+        <label>Título da postagem: </label>
+        <input type="text" id="titulo-nova-postagem" placeholder="O título vai aqui...">
+
+        <label>Corpo da postagem: </label>
+        <textarea id="corpo-nova-postagem" rows="4" placeholder="Escreva aqui..."></textarea>
+
+
+        <button id="botao-postar" onclick="postar()">Postar! </button>
+    </div>
+
+    <script>
+        if (localStorage.getItem("login").length == 0) {
+            alert("Você precisa estar logado para fazer uma postagem! ");
+            location.href = 'index.html'
+        }
+    </script>
+
+    <footer class="rodape"></footer>
+
+    <script src="javascript.js"></script>
+
+
+</body>
+
+</html>
